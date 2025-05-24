@@ -1,0 +1,20 @@
+Empezamos por representar un trazado de coordenadas con el matplotlib 
+En el codigo se expresa de forma poco compleja y se intenta representar lo visto en clase , 
+con lo escrito de cordenadas solicito al codigo lo que el usuario busca utilizando las coordenadas (x , y ) teniendo en cuanta que son mas de 2 valores 
+y teniendo en cuneta qeu no es como en el ejercicio de Manhatan
+ Punto 1 = (10, 20)  
+ Punto 2 = (40, 100)
+
+Tenienido en cuenta lo que vimos  on el profe se tiene que crear una lista que contenga los datos de las coordenadas y posicionarlas de tal manera que 
+sean posiobles de lerse por el codigo 
+El siguiente paso en print es que se mida las distancias entre los puntos para que se trazen los rayos 
+Trayendo tambien la funcion SQRT desde las librerias Math esto es una Raiz cuadrada 
+
+Usando ya lo mencionado tenemos que hacer que las coordenadas se guien y calculen distancia y se podria usar o interpretar asi:
+euclidiana(0 coord_totales):
+#coordenadas=[]
+for i in range(0,coord_totales):
+    print("ingrese coordenada",i)
+    x=int(input("x:"))
+    y=int(input("y:"))
+    coordenadas.append((x,y))
