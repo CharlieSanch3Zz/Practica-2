@@ -21,10 +21,19 @@ for j in range(0,coord_totales-1):
     dy=(coordenadas[j+1][1]-coordenadas[j][1])
     distancias.append(sqrt((dx**2)+(dy**2)))
 
-plt.plot(coordenadas[0],coordenadas[1])
-plt.plot(coordenadas[1],coordenadas[2])
-plt.plot(coordenadas[2],coordenadas[3])
-plt.plot(coordenadas[4],coordenadas[5])
+
+x_vals = [p[0] for p in coordenadas]
+y_vals = [p[1] for p in coordenadas]
+
+
+plt.plot(x_vals, y_vals, marker='o', linestyle='-')
+
+plt.title("Gráfico de Coordenadas")
+plt.xlabel("Eje X")
+plt.ylabel("Eje Y")
+plt.grid(True)
 plt.show()
 
-print(distancias)
+
+print("\nDistancias entre puntos consecutivos:")
+print(distancias)   
