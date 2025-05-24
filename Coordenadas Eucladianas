@@ -1,0 +1,30 @@
+import matplotlib.pyplot as plt
+
+print("aqui inicia la practica")
+print("cantidad de coordenadas:")
+coord_totales= int(input())
+
+coordenadas=[]
+for i in range(0,coord_totales):
+    print("ingrese coordenada",i)
+    x=int(input("x:"))
+    y=int(input("y:"))
+    coordenadas.append((x,y))
+
+print(coordenadas)
+print(type(coordenadas[0][0]))
+from math import sqrt
+distancias=[]
+for j in range(0,coord_totales-1):
+    dx=(coordenadas[j+1][0]-coordenadas[j][0])
+    print(dx)
+    dy=(coordenadas[j+1][1]-coordenadas[j][1])
+    distancias.append(sqrt((dx**2)+(dy**2)))
+
+plt.plot(coordenadas[0],coordenadas[1])
+plt.plot(coordenadas[1],coordenadas[2])
+plt.plot(coordenadas[2],coordenadas[3])
+plt.plot(coordenadas[4],coordenadas[5])
+plt.show()
+
+print(distancias)
